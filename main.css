@@ -1,11 +1,15 @@
 .wrapper {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     background: rgb(255, 234, 237);
     font-family: 'Courier New', Courier, monospace;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
     color:rgb(61, 0, 48);
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -13,7 +17,17 @@
     overflow: hidden;
     background-color: rgb(61, 0, 48);
     font-family: Arial;
+    position: sticky;
   }
+
+#logo {
+    text-align: center;
+    position: sticky;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    color: rgb(255,234,237);
+    font-size: 52pt;
+}
 
 .navbar a {
     float: right;
@@ -22,12 +36,13 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    position: -webkit-sticky;
   }
 
 #title {
     text-align: center;
     font-size: 38pt;
-    font-family: "./geraldine-font.zip";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .dropdown {
@@ -47,7 +62,7 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-        background-color: rgb(243, 148, 164);
+        background-color: rgb(255, 234, 237);
 }
 
 .dropdown-content {
@@ -78,17 +93,78 @@
 
 #sidebar {
     float: right;
+    border-left: 3px dotted rgb(255, 234, 237);
+    text-align: center;
+    height: 795px;
+    width: 238px;
+    margin: 1.5em 0 3.0em 1.5em;
+    padding: 1.5em 0.5em 2.0em 1.7em ;
+    background:rgb(61, 0, 48);
+    color: rgb(255, 234, 237);
+    position: static;
+    display: block;
+
 }
 
+/* .panel {
+    float: left;
+    position: relative;
+    width: 100%;
+    /* margin: 0 0.5em 2.0em 0.5em;
+    padding: 1.0em; */
+    /* background: rgb(255, 234, 237); 
+ } */
 
 .main {
-    width: 900px;
-    height: 600px;
+    width: 1400px;
+    height: 650px;
+    position: static;
+    align-items: center;
+    text-align: center;
+    /* margin: 0 0 2.0em;
+    padding:1.5em 0 2.0em 1.5em; */
+    padding-bottom: 150px;
+    padding-left: 250px;
+    background: rgb(255, 234, 237);
+    /* display: inline-block; */
+    box-shadow: 1px 1px 5px rgb(61 0 48);
+}
+
+/* .main::brfore {
+    border-bottom: 15px dotted rgb(61 0 48);
+    position: absolute;
+    background: rgb(61 0 48);
+} */
+
+.main div {
+    float: inherit;
+    text-align: center;
+}
+.main h1 {
+    float: inherit;
+}
+.main h2 {
+    float: inherit;
+}
+.main p {
+    float: inherit;
+}
+
+.main h2 {
+    padding-top: 150px;
+    float: inherit;
+}
+
+#main {
+    position: static;
+    align-items: center;
+    padding-top: 300px;
 }
 
 img {
     height: 700px;
     width: 1000;
+    position: relative;
 }
 
 #cssSlide {
@@ -98,6 +174,7 @@ img {
       border: 0px solid #666;
       margin: 0 auto;
       margin-bottom: 15px;
+      position: relative;
   }
 
   #slideImage {
@@ -105,10 +182,12 @@ img {
       height: 900px;
       overflow: hidden;
       -webkit-animation: slide 16s infinite;
+      position: relative;
   }
   
   #slideImage img {
       float: left;
+      position: relative;
   }
   
   @-webkit-keyframes slide{
@@ -123,4 +202,7 @@ img {
 	99%{margin-left: -4060px;}
 }
   
-
+#footer {
+    height: 150px;
+    width: 100%;
+}

@@ -24,6 +24,7 @@
     background-color: rgb(61, 0, 48);
     font-family: Arial;
     position: sticky;
+    max-width: 100%;
   }
   #logo {
     text-align: center;
@@ -156,7 +157,7 @@
     /* position: relative; */
   }
   #slideImage {
-    width: 6500px;
+    width: 10000px;
     height: 900px;
     overflow: hidden;
     -webkit-animation: slide 16s infinite;
@@ -166,16 +167,28 @@
     /* float: left; */
     /* position: relative; */
   }
-  @-webkit-keyframes slide {
+  /* @-webkit-keyframes slide {
     0% {margin-left: 0px;}
     16% {margin-left: -1250px;}
     27% {margin-left: -1250px;}
-    38% {margin-left: -2250px;}
-    50% {margin-left: -2250px;}
-    62% {margin-left: -3250px;}
-    74% {margin-left: -3250px;}
-    88% {margin-left: -4250px;}
-    99% {margin-left: -4250px;}
+    38% {margin-left: -2400px;}
+    50% {margin-left: -2400px;}
+    62% {margin-left: -3300px;}
+    74% {margin-left: -3300px;}
+    88% {margin-left: -4350px;}
+    99% {margin-left: -4350px;}
+  } */
+
+  @-webkit-keyframes slide {
+    0% {margin-left: 0px;}
+    16% {margin-left: -550px;}
+    27% {margin-left: -1500px;}
+    38% {margin-left: -2550px;}
+    50% {margin-left: -3600px;}
+    62% {margin-left: -4550px;}
+    74% {margin-left: -5500px;}
+    88% {margin-left: -6550px;}
+    99% {margin-left: -7550px;}
   }
   
   .location {
